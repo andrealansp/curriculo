@@ -9,9 +9,9 @@ __Acompanhe comigo a evolução do meu projeto.__
 Lista de Tarefas do projeto
 
 - [x] Criar Repositório
-- [ ] Reescrever o Currículo
-- [ ] Escrever Perfil Comportamental
-- [ ] Definir design do site
+- [X] Reescrever o Currículo
+- [X] Escrever Perfil Comportamental
+- [X] Definir design do site
 - [ ] Criar listagem dos meus repositórios
 - [ ] Listar Cursos e certificados
 - [ ] Listar Habilidades
