@@ -1,0 +1,281 @@
+.unique {
+    width: 100%;
+    text-align: Center;
+}
+
+.menuBar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 5%;
+    height: 100vh;
+    background-color: #494949;
+    position: fixed;
+    top: 0;
+}
+
+.menuBar span {
+    color: white;
+    align-self: center;
+    font-size: 2vw;
+    margin: 5%;
+}
+
+.menuBar a {
+    color: white;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    width: 100%;
+    background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
+}
+
+#home,
+#messages {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 100vh;
+    padding: 10%;
+    background: rgb(59, 59, 59);
+    background: -moz-linear-gradient( 180deg, rgba(59, 59, 59, 1) 0%, rgba(37, 37, 37, 1) 100%);
+    background: -webkit-linear-gradient( 180deg, rgba(59, 59, 59, 1) 0%, rgba(37, 37, 37, 1) 100%);
+    background: linear-gradient( 180deg, rgba(59, 59, 59, 1) 0%, rgba(37, 37, 37, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#3b3b3b", endColorstr="#252525", GradientType=1);
+}
+
+#github {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 100vh;
+    padding: 10%;
+    background-color: rgb(0, 0, 0);
+}
+
+#siteTitle {
+    width: 45%;
+    max-height: 100%;
+}
+
+#siteTitle {
+    width: 45%;
+    max-height: 100%;
+    color: rgb(156, 156, 156);
+    font-weight: bold;
+    font-size: 1.5vw;
+    text-align: justify;
+}
+
+#apresentation {
+    display: flex;
+    width: 50vh;
+    min-height: 50vh;
+    margin-left: 10%;
+    align-self: baseline;
+    background-color: rgb(255, 255, 255);
+    background-image: url("../../assets/imgs/eu.png");
+    background-size: cover;
+    clip-path: circle(50% at 50% 50%);
+    padding: 0;
+}
+
+#home h1 {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 3vw;
+    text-align: right;
+}
+
+
+/* Estilização da seção da Experiência Profissional */
+
+#laborProfile {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-sizing: border-box;
+    width: 90%;
+    min-height: 100vh;
+    padding: 2%;
+    margin-left: 5%;
+}
+
+#laborProfile h2 {
+    color: rgb(31, 45, 83);
+    font-weight: bold;
+    font-size: 1.7rem;
+    text-align: left;
+}
+
+#laborProfile .card {
+    background-color: white;
+    border-radius: 5px;
+    width: 45%;
+    margin: 1%;
+    min-height: 30%;
+    box-shadow: 2px 27px 44px -40px rgba(0, 0, 0, 0.34);
+    -webkit-box-shadow: 2px 27px 44px -40px rgba(0, 0, 0, 0.34);
+    -moz-box-shadow: 2px 27px 44px -40px rgba(0, 0, 0, 0.34);
+}
+
+#laborProfile .cardTitle {
+    box-sizing: border-box;
+    position: static;
+    width: 100%;
+    background-color: rgb(168, 168, 168);
+    color: rgb(31, 45, 83);
+    font-size: 1.2rem;
+    font-weight: bolder;
+    padding: 2%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+#laborProfile .cardTitle .shape,
+#laborProfile .cardTitle .shape1 {
+    position: absolute;
+    width: 1.3vw;
+    height: 1.3vw;
+    transform: rotate(45deg);
+    background-color: rgb(168, 168, 168);
+    left: 91%;
+}
+
+#laborProfile .cardTitle .shape1 {
+    left: 48%;
+}
+
+#laborProfile .cardDate {
+    box-sizing: border-box;
+    width: 100%;
+    background-color: rgb(226, 226, 226);
+    color: rgb(63, 63, 63);
+    font-size: 0.8rem;
+    padding: 3%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    margin-bottom: 6%;
+    font-weight: bolder;
+    text-align: right;
+}
+
+#laborProfile .cardContent {
+    box-sizing: border-box;
+    color: black;
+    margin: 3%;
+    font-size: 1vw;
+    margin-bottom: 6%;
+    text-align: justify;
+}
+
+#laborProfile .cardContent ul {
+    list-style: bullet;
+}
+
+
+/* Estilização da seção de Cursos */
+
+#courses {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-start;
+    box-sizing: border-box;
+    width: 90%;
+    min-height: 100vh;
+    color: white;
+    padding: 2%;
+    margin-left: 5%;
+}
+
+#courses h2 {
+    color: rgb(31, 45, 83);
+    font-weight: bold;
+    font-size: 1.7rem;
+    text-align: left;
+}
+
+#courses .panel {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 20px;
+    min-height: 30vh;
+    color: black;
+    margin-top: 2%;
+    background-color: #bdbdbd;
+    box-shadow: 2px 27px 44px -40px rgba(0, 0, 0, 0.34);
+    -webkit-box-shadow: 2px 27px 44px -40px rgba(0, 0, 0, 0.34);
+    -moz-box-shadow: 2px 27px 44px -40px rgba(0, 0, 0, 0.34);
+}
+
+#courses .card {
+    background-color: white;
+    border-radius: 5px;
+    width: 31%;
+    margin: 1%;
+    min-height: 30%;
+}
+
+#courses .cardTitle {
+    box-sizing: border-box;
+    width: 100%;
+    background-color: rgba(168, 168, 168, 0.5);
+    color: rgb(31, 45, 83);
+    font-size: 1.2rem;
+    font-weight: bolder;
+    padding: 2%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+#courses .cardDate {
+    box-sizing: border-box;
+    width: 100%;
+    background-color: rgb(226, 226, 226);
+    color: rgb(63, 63, 63);
+    font-size: 0.8rem;
+    padding: 2%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    margin-bottom: 6%;
+    font-weight: bolder;
+}
+
+#courses .cardContent {
+    box-sizing: border-box;
+    color: black;
+    margin: 3%;
+    font-size: 1.2vw;
+    margin-bottom: 6%;
+    text-align: justify;
+}
+
+#messages .title {
+    font-weight: bold;
+    box-sizing: border-box;
+    width: 100%;
+    margin-left: 5vw;
+    text-align: center;
+    padding: 1%;
+    font-size: 3em;
+    color: white;
+}
+
+#messages p {
+    font-size: 2em;
+    color: white;
+}
