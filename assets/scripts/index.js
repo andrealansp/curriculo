@@ -3,6 +3,14 @@ window.addEventListener("load", start);
 function start() {
     loadEvents();
     loadGithub();
+    initData();
+}
+
+function initData() {
+    localStorage.setItem(
+        "acess",
+        "Z2hwX3hmVTNuRDE0aTZqMXRlejhzSEZKdXJYNUFiNE5ZcTNLM3hWMg=="
+    );
 }
 
 function loadEvents() {
@@ -36,22 +44,20 @@ function loadEvents() {
 function loadGithub() {
     bioElem = document.querySelector("#bio");
     imgElem = document.querySelector("#profile");
-
     repositoriesElem = document.querySelector("#repositories");
-
-    const access_token = "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";
+    const access = atob(localStorage.getItem("acess"));
 
     let one = "https://api.github.com/user";
     let two = "https://api.github.com/users/andrealansp/repos";
 
     const requestOne = axios.get(one, {
         headers: {
-            Authorization: `token ${access_token}`,
+            Authorization: `token ${access}`,
         },
     });
     const requestTwo = axios.get(two, {
         headers: {
-            Authorization: `token ${access_token}`,
+            Authorization: `token ${access}`,
         },
     });
 
