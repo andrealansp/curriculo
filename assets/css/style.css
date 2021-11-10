@@ -34,8 +34,7 @@
     background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
 }
 
-#home,
-#messages {
+#home {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -51,6 +50,18 @@
     filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#3b3b3b", endColorstr="#252525", GradientType=1);
 }
 
+#messages {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 100vh;
+    padding: 10%;
+    background-color: black;
+}
+
 #github {
     display: flex;
     flex-direction: row;
@@ -60,7 +71,44 @@
     width: 100%;
     min-height: 100vh;
     padding: 10%;
-    background-color: rgb(0, 0, 0);
+    background-color: white;
+}
+
+#github p {
+    margin-bottom: 5vh;
+}
+
+#github #gitProfile {
+    width: 20%;
+    text-align: justify;
+    line-height: 1.5em;
+}
+
+#github img {
+    margin-bottom: 5vh;
+    border-radius: 50%;
+    width: 60%;
+    border: 3px solid rgb(59, 59, 59);
+}
+
+#github #repositories {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 70%;
+    margin: 2%;
+    font-weight: bold;
+}
+
+#github .repos {
+    border: 1px solid rgb(59, 59, 59);
+    border-radius: 2%;
+    color: black;
+    font-weight: bold;
+    width: 25%;
+    margin: 2%;
+    padding: 2%;
 }
 
 #siteTitle {
