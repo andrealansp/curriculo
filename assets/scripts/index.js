@@ -72,13 +72,11 @@ function loadGithub() {
 
                 console.log(responseTwo);
 
-                let count = 0;
                 for (x in responseTwo.data) {
                     repo = document.createElement("div");
                     repo.classList.add("repos");
-                    repo.innerHTML = `<p>${responseTwo.data[count]["name"]}</p> <p>${responseTwo.data[count]["description"]}</p>`;
+                    repo.innerHTML = `<p><a href="${responseTwo.data[x]["html_url"]}">${responseTwo.data[x]["name"]}</a><p>${responseTwo.data[x]["description"]}</p>`;
                     repositoriesElem.appendChild(repo);
-                    count++;
                 }
             })
         )

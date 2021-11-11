@@ -70,7 +70,7 @@
     box-sizing: border-box;
     width: 100%;
     min-height: 100vh;
-    padding: 10%;
+    padding: 5%;
     background-color: white;
 }
 
@@ -79,7 +79,8 @@
 }
 
 #github #gitProfile {
-    width: 20%;
+    width: 30%;
+    margin-left: 5%;
     text-align: justify;
     line-height: 1.5em;
 }
@@ -96,19 +97,27 @@
     flex-direction: row;
     flex-wrap: wrap;
     box-sizing: border-box;
-    width: 70%;
+    width: 60%;
+    max-height: 60vh;
+    overflow-x: auto;
     margin: 2%;
     font-weight: bold;
 }
 
 #github .repos {
-    border: 1px solid rgb(59, 59, 59);
-    border-radius: 2%;
+    border: 1px solid rgb(182, 182, 182);
+    border-radius: 5%;
     color: black;
-    font-weight: bold;
-    width: 25%;
-    margin: 2%;
-    padding: 2%;
+    font-weight: 400;
+    width: 27%;
+    margin: 1%;
+    padding: 1%;
+    background-color: rgb(226, 226, 226);
+}
+
+#github .repos a {
+    color: rgb(31, 45, 83);
+    text-decoration: none;
 }
 
 #siteTitle {
