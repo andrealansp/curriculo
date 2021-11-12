@@ -5,10 +5,10 @@
 
 .menuBar {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
-    width: 5%;
-    height: 100vh;
+    width: 100%;
+    height: 5vh;
     background-color: #494949;
     position: fixed;
     top: 0;
@@ -17,7 +17,7 @@
 .menuBar span {
     color: white;
     align-self: center;
-    font-size: 2vw;
+    font-size: 4vw;
     margin: 5%;
 }
 
@@ -50,108 +50,33 @@
     filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#3b3b3b", endColorstr="#252525", GradientType=1);
 }
 
-#messages {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: stretch;
-    box-sizing: border-box;
-    width: 100%;
-    min-height: 100vh;
-    padding: 10%;
-    background-color: black;
-}
-
-#github {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: stretch;
-    box-sizing: border-box;
-    width: 100%;
-    min-height: 100vh;
-    padding: 5%;
-    background-color: white;
-}
-
-#github p {
-    margin-bottom: 5vh;
-}
-
-#github #gitProfile {
-    width: 30%;
-    margin-left: 5%;
-    text-align: justify;
-    line-height: 1.5em;
-}
-
-#github img {
-    margin-bottom: 5vh;
-    border-radius: 50%;
-    width: 60%;
-    border: 3px solid rgb(59, 59, 59);
-}
-
-#github #repositories {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    box-sizing: border-box;
-    width: 60%;
-    max-height: 60vh;
-    overflow-x: auto;
-    margin: 2%;
+#home h1 {
+    color: rgb(255, 255, 255);
     font-weight: bold;
-}
-
-#github .repos {
-    border: 1px solid rgb(182, 182, 182);
-    border-radius: 5%;
-    color: black;
-    font-weight: 400;
-    width: 27%;
-    margin: 1%;
-    padding: 1%;
-    background-color: rgb(226, 226, 226);
-}
-
-#github .repos a {
-    color: rgb(31, 45, 83);
-    text-decoration: none;
+    font-size: 5vw;
+    text-align: right;
 }
 
 #siteTitle {
-    width: 45%;
-    max-height: 100%;
-}
-
-#siteTitle {
-    width: 45%;
+    margin-top: 15%;
+    width: 100%;
     max-height: 100%;
     color: rgb(156, 156, 156);
     font-weight: bold;
-    font-size: 1.5vw;
+    font-size: 4vw;
     text-align: justify;
 }
 
 #apresentation {
-    display: flex;
-    width: 50vh;
-    min-height: 50vh;
-    margin-left: 10%;
-    align-self: baseline;
+    width: 75vw;
+    min-height: 75vw;
+    justify-content: center;
+    align-content: center;
     background-color: rgb(255, 255, 255);
     background-image: url("../../assets/imgs/eu.png");
     background-size: cover;
     clip-path: circle(50% at 50% 50%);
     padding: 0;
-}
-
-#home h1 {
-    color: rgb(255, 255, 255);
-    font-weight: bold;
-    font-size: 3vw;
-    text-align: right;
 }
 
 
@@ -164,14 +89,15 @@
     box-sizing: border-box;
     width: 90%;
     min-height: 100vh;
-    padding: 2%;
+    padding: 6%;
     margin-left: 5%;
 }
 
 #laborProfile h2 {
+    margin-top: 15%;
     color: rgb(31, 45, 83);
     font-weight: bold;
-    font-size: clamp(0.5em, 1em + 1vw, 1.5em);
+    font-size: 1em;
     text-align: left;
 }
 
@@ -192,7 +118,7 @@
     width: 100%;
     background-color: rgb(168, 168, 168);
     color: rgb(31, 45, 83);
-    font-size: clamp(0.5em, 1em + 1vw, 1.5em);
+    font-size: 3vw;
     font-weight: bolder;
     padding: 2%;
     border-top-left-radius: 5px;
@@ -218,7 +144,7 @@
     width: 100%;
     background-color: rgb(226, 226, 226);
     color: rgb(63, 63, 63);
-    font-size: 0.8rem;
+    font-size: 2vw;
     padding: 3%;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
@@ -231,7 +157,7 @@
     box-sizing: border-box;
     color: black;
     margin: 3%;
-    font-size: 1vw;
+    font-size: 2vw;
     margin-bottom: 6%;
     text-align: justify;
 }
@@ -257,9 +183,10 @@
 }
 
 #courses h2 {
+    margin-top: 15%;
     color: rgb(31, 45, 83);
     font-weight: bold;
-    font-size: 1.7rem;
+    font-size: 1rem;
     text-align: left;
 }
 
@@ -270,7 +197,7 @@
     width: 100%;
     box-sizing: border-box;
     border-radius: 20px;
-    min-height: 30vh;
+    min-height: 15vh;
     color: black;
     margin-top: 2%;
     background-color: #bdbdbd;
@@ -284,7 +211,7 @@
     border-radius: 5px;
     width: 31%;
     margin: 1%;
-    min-height: 30%;
+    min-height: 20%;
 }
 
 #courses .cardTitle {
@@ -292,7 +219,8 @@
     width: 100%;
     background-color: rgba(168, 168, 168, 0.5);
     color: rgb(31, 45, 83);
-    font-size: 1.2rem;
+    font-size: 0.6rem;
+    text-align: center;
     font-weight: bolder;
     padding: 2%;
     border-top-left-radius: 5px;
@@ -304,7 +232,7 @@
     width: 100%;
     background-color: rgb(226, 226, 226);
     color: rgb(63, 63, 63);
-    font-size: 0.8rem;
+    font-size: 0.5rem;
     padding: 2%;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
@@ -319,6 +247,78 @@
     font-size: 1.2vw;
     margin-bottom: 6%;
     text-align: justify;
+}
+
+#github {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 100vh;
+    padding: 5%;
+    background-color: white;
+}
+
+#github p {
+    margin-bottom: 5vh;
+}
+
+#github #gitProfile {
+    width: 100%;
+    margin-left: 5%;
+    text-align: justify;
+    line-height: 1.5em;
+}
+
+#github img {
+    margin: 15%;
+    margin-bottom: 5vh;
+    border-radius: 50%;
+    width: 60%;
+    border: 3px solid rgb(59, 59, 59);
+}
+
+#github #repositories {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 0.6em;
+    max-height: 60vh;
+    overflow-x: auto;
+    margin: 2%;
+    font-weight: bold;
+}
+
+#github .repos {
+    border: 1px solid rgb(182, 182, 182);
+    border-radius: 5%;
+    color: black;
+    font-weight: 400;
+    width: 27%;
+    margin: 1%;
+    padding: 1%;
+    background-color: rgb(226, 226, 226);
+}
+
+#github .repos a {
+    color: rgb(31, 45, 83);
+    text-decoration: none;
+}
+
+#messages {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 100vh;
+    padding: 10%;
+    background-color: black;
 }
 
 #messages .title {
