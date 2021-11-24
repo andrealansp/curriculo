@@ -105,18 +105,16 @@
 }
 
 #github .repos {
-    border: 1px solid rgb(182, 182, 182);
-    border-radius: 5%;
     color: black;
     font-weight: 400;
-    width: 27%;
+    width: 60%;
     margin: 1%;
     padding: 1%;
-    background-color: rgb(226, 226, 226);
 }
 
 #github .repos a {
     color: rgb(31, 45, 83);
+    font-weight: bold;
     text-decoration: none;
 }
 
@@ -329,6 +327,11 @@
     text-align: center;
     padding: 1%;
     font-size: 3em;
+    color: white;
+}
+
+#messages h4 {
+    font-size: 2.6em;
     color: white;
 }
 

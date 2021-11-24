@@ -42,9 +42,10 @@ function loadEvents() {
 }
 
 function loadGithub() {
-    bioElem = document.querySelector("#bio");
-    imgElem = document.querySelector("#profile");
-    repositoriesElem = document.querySelector("#repositories");
+    const bioElem = document.querySelector("#bio");
+    const imgElem = document.querySelector("#profile");
+    const repositoriesElem = document.querySelector("#repositories");
+    const repositoryElem = document.querySelector("#repo");
     const access = atob(localStorage.getItem("acess"));
 
     let one = "https://api.github.com/user";
@@ -70,14 +71,18 @@ function loadGithub() {
                 bioElem.innerHTML = responseOne.data.bio;
                 imgElem.src = responseOne.data.avatar_url;
 
-                console.log(responseTwo);
-
                 for (x in responseTwo.data) {
-                    repo = document.createElement("div");
-                    repo.classList.add("repos");
-                    repo.innerHTML = `<p><a href="${responseTwo.data[x]["html_url"]}">${responseTwo.data[x]["name"]}</a><p>${responseTwo.data[x]["description"]}</p>`;
-                    repositoriesElem.appendChild(repo);
+                    const header = document.createElement("h2");
+                    const paragraph = document.createElement("p");
+                    const breakline = document.createElement("br");
+                    header.innerHTML = `<a href="${responseTwo.data[x]["html_url"]}">${responseTwo.data[x]["full_name"]}</a>`;
+                    paragraph.innerHTML = `${responseTwo.data[x]["description"]}`;
+                    repositoryElem.appendChild(header);
+                    repositoryElem.appendChild(breakline);
+                    repositoryElem.appendChild(paragraph);
                 }
+                repositoriesElem.appendChild(repositoryElem);
+                repositoryElem.classList.add("repos");
             })
         )
         .catch((errors) => {

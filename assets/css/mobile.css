@@ -209,7 +209,7 @@
 #courses .card {
     background-color: white;
     border-radius: 5px;
-    width: 31%;
+    width: 100%;
     margin: 1%;
     min-height: 20%;
 }
@@ -294,14 +294,12 @@
 }
 
 #github .repos {
-    border: 1px solid rgb(182, 182, 182);
-    border-radius: 5%;
     color: black;
-    font-weight: 400;
-    width: 27%;
+    font-weight: 800;
+    line-height: 1.6vh;
+    width: 90%;
     margin: 1%;
     padding: 1%;
-    background-color: rgb(226, 226, 226);
 }
 
 #github .repos a {
@@ -311,9 +309,9 @@
 
 #messages {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: stretch;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
     box-sizing: border-box;
     width: 100%;
     min-height: 100vh;
@@ -328,11 +326,11 @@
     margin-left: 5vw;
     text-align: center;
     padding: 1%;
-    font-size: 3em;
+    font-size: 1.5em;
     color: white;
 }
 
 #messages p {
-    font-size: 2em;
+    font-size: 1em;
     color: white;
 }
